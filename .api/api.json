@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "apis": [
+    {
+      "identifier": "bitfinex",
+      "source": "@bitfinex/v2#e19jolfwqbejx",
+      "integrity": "sha512-0z1x+wRbSK9wRzF1ymCKgrpOijJZdZXXH+1CKbvBJivNSuYXwGy7J81361gAzIDQjXlmJ2tIHYm11wj/U3+s7g==",
+      "installerVersion": "6.1.1"
+    }
+  ]
+}

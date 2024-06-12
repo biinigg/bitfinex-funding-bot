@@ -1,4 +1,4 @@
-FROM nginx
+FROM  --platform=linux/amd64 nginx
 LABEL authors="xgene"
 COPY nginx.conf /etc/nginx/nginx.conf
 

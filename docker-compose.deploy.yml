@@ -3,11 +3,8 @@ services:
   app:
     image: docker.io/itgovip/bitfinex-lending-api
     container_name:  bitfinex-lending-api
-    build: .
     platform: linux/amd64
     command: yarn server:dev
-    volumes:
-      - .:/app
     ports:
       - "3001:3001"
     env_file:
@@ -15,8 +12,6 @@ services:
   fe:
     image: docker.io/itgovip/bitfinex-lending-fe
     container_name: bitfinex-lending-fe
-    build:
-      dockerfile: fe.Dockerfile
     platform: linux/amd64
     command: [nginx, '-g', 'daemon off;']
     ports:

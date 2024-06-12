@@ -1,4 +1,4 @@
-FROM node:13.8.0-alpine
+FROM  node:13.8.0-alpine
 LABEL maintainer="xgene"
 
 RUN mkdir /app
@@ -8,7 +8,7 @@ COPY package.json ./
 COPY yarn.lock ./
 #COPY node_modules ./
 
-#RUN yarn install
+#RUN REACT_APP_API_URL='https://www.itgo.vip/' yarn build
 
 COPY . .
 

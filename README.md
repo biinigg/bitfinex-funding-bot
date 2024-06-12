@@ -45,8 +45,15 @@ yarn start
 
 api: `docker-compose up -d` and serve it in a proxy server such as nginx
 
-ui:  `REACT_APP_API_URL='https://yourserverurl.com' yarn build` 
+ui:  `REACT_APP_API_URL='https://yourserverurl.com' yarn build`
 
+* prod
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+REACT_APP_API_URL='https://www.itgo.vip/lending' yarn build
+```
+
+* local
 ```
 export NODE_OPTIONS=--openssl-legacy-provider
 docker-compose up --build -d   

@@ -1,4 +1,8 @@
 const bitfinext = require("./bitfinex");
+const tg = require("./tg");
+const {
+  push
+} = tg;
 const {
   getBalance,
   getAvailableBalance,
@@ -53,7 +57,7 @@ async function main({ showDetail = false, ccy = "USD" } = {}) {
   const lending = await getCurrentLending(ccy);
   const avaliableBalance = await getAvailableBalance(ccy);
   const offers = await getFundingOffers(avaliableBalance, ccy);
-
+  const notify = await tg.push(`${ccy}'s available balance:${avaliableBalance}`)
   // submit funding offer
   if (process.env.NODE_ENV === "development") {
     offers.forEach(offer => console.log(readableOffer(offer)));

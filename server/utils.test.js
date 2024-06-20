@@ -1,4 +1,5 @@
 const { getPeriod } = require("./utils");
+const { tg } = require("./tg");
 
 test("test peiord-rate mapping", () => {
   const rates = [0.0001, 0.0002, 0.00033, 0.0004, 0.0006, 0.0007, 0.001];
@@ -6,4 +7,9 @@ test("test peiord-rate mapping", () => {
   rates.forEach((rate, idx) => {
     expect(getPeriod(rate)).toBe(expects[idx]);
   });
+});
+
+test("test tg notify", () => {
+
+  expect(tg.push('new notify')).toBe(expects[200]);
 });

@@ -30,6 +30,7 @@
   "scripts": {
     "start": "react-scripts start",
     "st": "REACT_APP_API_URL='https://www.itgo.vip/lending' react-scripts start",
+    "bu": "REACT_APP_API_URL='https://www.itgo.vip/lending' react-scripts build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

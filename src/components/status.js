@@ -106,12 +106,12 @@ function Status({
             <StatusPanel title={"可用"} value={`${availableBalance.toFixed(4)}`}/>
             <StatusPanel title={"30天收益"} value={`${earning30.toFixed(4)}`}/>
             <StatusPanel title={"當前年利率"} value={toPercentage(rate)}/>
-            <Predict></Predict>
+            {/*<Predict></Predict>*/}
             <CurrencyToggle
                 activeCurrency={currency}
                 onCurrencyChange={onCurrencyChange}
             />
-            <History></History>
+            {/*<History></History>*/}
         </div>
     );
 }

@@ -49,7 +49,7 @@ ui:  `REACT_APP_API_URL='https://yourserverurl.com' yarn build`
 
 * prod
 ```
-export NODE_OPTIONS=--openssl-legacy-provider
+
 REACT_APP_API_URL='https://www.itgo.vip/lending' yarn build
 ```
 
